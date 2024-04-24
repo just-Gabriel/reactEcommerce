@@ -24,10 +24,10 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 400vh;
 }
 
 h1 {
@@ -65,4 +65,119 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.maDiv {
+  padding: 20px;
+  background-color: #95b3b5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+/* // Styles pour les listes <ul> à l'intérieur de la div */
+.maDiv ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: end;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  gap: 10px;
+}
+
+/* // Styles pour les éléments <li> à l'intérieur des listes <ul> */
+.maDiv ul li {
+  margin-bottom: 10px;
+}
+
+/* // Styles pour les images <img> à l'intérieur de la div */
+.maDiv img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.span {
+  color: crimson;
+}
+.h1 {
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.cligno {
+  font-size: 200px;
+  color: cadetblue;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+}
+
+.cligno span {
+  position: relative;
+  display: inline-block;
+}
+
+.cligno span::after {
+  content: attr(data-letter);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  color: #fff900;
+  text-shadow: 0 0 2px #fff900, 0 0 10px #fff900;
+  opacity: 0;
+  animation: cligno 1.25s ease-in-out infinite;
+}
+@keyframes cligno {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.p {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #fff900;
+}
+.bulleHomePage {
+  height: 549px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px, 100px, 0px, 100px;
+  gap: 10px;
+  background-color: gainsboro;
+  border-radius: 60px;
+  width: 90%; /* Largeur de la page HTML et du corps est 80% de la largeur de la fenêtre */
+  margin: 0 auto;
+}
+.laFrisee {
+  width: 864px;
+  height: 549px;
+  top: 100px;
+  left: 559px;
+  gap: 0px;
+  opacity: 0px;
+  object-fit: contain;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  width: 449px;
+  height: 400px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  color: rgb(38, 38, 40);
+  font-family: Inter;
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 100px;
+  text-align: left;
 }
