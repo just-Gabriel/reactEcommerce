@@ -1,13 +1,13 @@
+import Button from "./Button";
+
 function HomePage() {
   return (
     <div className="bulleHomePage">
-      <div>
+      <div className="bulleHomePage">
         <h1 className="title">
           LET'S <br /> EXPLORE <br /> UNIQUE <br /> ITEMS.
+          <Button />
         </h1>
-        {/* <h1 className="title">EXPLORE</h1> */}
-        {/* <h1 className="title">UNIQUE</h1> */}
-        {/* <h1 className="title">ITEMs.</h1> */}
       </div>
       <img
         className="laFrisee"

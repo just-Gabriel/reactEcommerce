@@ -24,7 +24,6 @@ a:hover {
 
 body {
   margin: 0;
-
   place-items: center;
   min-width: 320px;
   min-height: 400vh;
@@ -155,6 +154,7 @@ button:focus-visible {
   border-radius: 60px;
   width: 90%; /* Largeur de la page HTML et du corps est 80% de la largeur de la fenêtre */
   margin: 0 auto;
+  /* flex-direction: column; */
 }
 .laFrisee {
   width: 864px;
@@ -180,4 +180,41 @@ button:focus-visible {
   font-weight: 900;
   line-height: 100px;
   text-align: left;
+  flex-direction: column;
+}
+.leButton {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+
+  color: #f5f1f4;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(11, 11, 11, 0.1);
+  transition: background-color 0.3s ease;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.78px;
+  text-align: left;
+  position: absolute;
+  height: 50px;
+  background-color: blueviolet;
+  justify-content: center;
+  width: 200px;
+  gap: 0px;
+  opacity: 1px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.78px;
+  text-align: inherit;
+  border: 1.5px solid #620a55;
+}
+
+.custom-button:hover {
+  background-color: #be0fa4;
 }
