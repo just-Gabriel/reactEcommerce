@@ -1,6 +1,4 @@
 * {
-  /* margin: 0;
-  padding: 0; */
   box-sizing: border-box;
 }
 
@@ -62,7 +60,7 @@ hy {
 hy:hover {
   background-color: #8a2a82;
 }
-/* ------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------Le Button------------------------------------------------------------------------------- */
 button {
   width: auto;
   border-radius: 8px;
@@ -85,7 +83,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* -------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------Comme le porc salut c'est marquer dessus-------------------------------------------------------------------------- */
 .nav {
   padding: 20px;
   background-color: #95b3b5;
@@ -123,13 +121,13 @@ button:focus-visible {
 .span {
   color: crimson;
 }
-/* --------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------Home page "LET EXPLORE UNIQUE ITEM"  je sais le nomage est a chier --------------------------------------------------------------------------- */
 .h1 {
   font-size: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------effect du looding CHARGEMENT EN MODE 3G-------------------------------------------------------------------------- */
 
 .cligno {
   font-size: 200px;
@@ -174,7 +172,7 @@ button:focus-visible {
   margin-left: 0%;
   /* background-color: rgb(169, 165, 165); */
 }
-/* ------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------La Div ou il y a le texte et la frisée----------------------------------------------------------------------------------------- */
 .bulleHomePage {
   height: 530px;
   display: flex-block;
@@ -188,7 +186,7 @@ button:focus-visible {
   margin-bottom: 10px;
 }
 
-/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------sa coule de source  <img>------------------------------------------------------------------------------------ */
 .laFrisee {
   position: absolute;
   justify-content: flex-end;
@@ -219,42 +217,6 @@ button:focus-visible {
   /* flex-direction: column; */
 }
 /* --------------------------------------------------------------------------------------------------------------------------------- */
-/* .leButton {
-  display: block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  color: #0c0c0c;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(11, 11, 11, 0.1);
-  transition: background-color 0.3s ease;
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 21.78px;
-  text-align: left;
-  position: absolute;
-  height: 50px;
-  background-color: blueviolet;
-  justify-content: center;
-  width: 200px;
-  gap: 0px;
-  opacity: 1px;
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 21.78px;
-  text-align: inherit;
-  border: 1.5px solid #620a55;
-} */
-
-.custom-button:hover {
-  background-color: #be0fa4;
-}
-/* --------------------------------------------------------------------------------------------------------------------------- */
 
 .Card {
   background-color: #ccc;
@@ -284,7 +246,7 @@ button:focus-visible {
   font-size: 30px;
   margin-left: 0px;
 }
-
+/* --------------------------------------------------------------------------------------------------------------- */
 .Card2 {
   background-color: #e2d7d7;
   border: 1px solid #ccc;
@@ -296,17 +258,18 @@ button:focus-visible {
   object-fit: cover;
   border: 1px solid rgb(182, 177, 177);
 }
-
+/* --------------------------------------La div qui englobe les Card de la Home-------------------------------------------------- */
 .element-Card {
   display: flex;
   justify-content: center;
   gap: 15%;
   margin-top: 10px;
 }
+/* ------------------------------------------------------L'image a l'interieur de la Card---------------------------------------- */
 img.Card2 {
   align-items: center;
 }
-/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------utiliser dans produit--------------------------------------------------------------------------------- */
 
 .container {
   margin: 0;

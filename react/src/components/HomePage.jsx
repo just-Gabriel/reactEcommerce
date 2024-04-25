@@ -18,7 +18,7 @@ function HomePage() {
         />
         <div>
           <h2>
-            MENS WATCHES<Button></Button>
+            <p className="h1">MENS WATCHES</p> <Button></Button>
           </h2>
         </div>
 
