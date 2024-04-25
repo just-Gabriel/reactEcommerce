@@ -9,7 +9,7 @@ function Card() {
       <p>Marque</p>
       <h2>titre</h2>
       <h2>titre 2</h2>
-      <p className="p2">prix</p>
+      <p className="p2">prix $</p>
     </div>
   );
 }

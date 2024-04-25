@@ -1,4 +1,4 @@
 function Button() {
-  return <button className="leButton">Texte &rarr; </button>;
+  return <button className="button">Découvrir les produits &rarr; </button>;
 }
 export default Button;

@@ -8,6 +8,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  /* box-sizing: border-box; */
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -42,41 +43,48 @@ h1 {
 }
 h2 {
   font-size: 30px;
-  color: #fff900;
+  color: #020202;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: first baseline;
+}
+hy {
+  font-size: 30px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  width: 140%;
+  border: 1px solid#34343450;
+  border-radius: 7px;
+}
+
+hy:hover {
+  background-color: #8a2a82;
 }
 /* ------------------------------------------------------------------------------------------------------------------------------- */
 button {
+  width: auto;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
+  background-color: #8a2a82;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+
   cursor: pointer;
   transition: border-color 0.25s;
   margin-left: 200px;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #e6dee6;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
 /* -------------------------------------------------------------------------------------------------------------------------- */
 .nav {
   padding: 20px;
@@ -159,23 +167,25 @@ button:focus-visible {
 }
 /* ------------------------------------------------------------------------------------------------------------------------------- */
 .p {
-  font-size: 3.2em;
+  font-size: 5.2em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   line-height: 1.1;
-  color: #fff900;
-  margin-left: 20%;
+  color: #020202;
+  margin-left: 0%;
+  /* background-color: rgb(169, 165, 165); */
 }
 /* ------------------------------------------------------------------------------------------------------------------------------- */
 .bulleHomePage {
   height: 530px;
   display: flex-block;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   padding: 100px, 100px, 100px, 100px;
   gap: 10px;
   background-color: rgb(169, 165, 165);
   border-radius: 60px;
-  width: 1500px; /* Largeur de la page HTML et du corps est 80% de la largeur de la fenêtre */
+  width: 1500px;
   margin: 0 auto;
-  /* flex-direction: column; */
+  margin-bottom: 10px;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
@@ -209,7 +219,7 @@ button:focus-visible {
   /* flex-direction: column; */
 }
 /* --------------------------------------------------------------------------------------------------------------------------------- */
-.leButton {
+/* .leButton {
   display: block;
   padding: 10px 20px;
   font-size: 16px;
@@ -217,7 +227,7 @@ button:focus-visible {
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
-  color: #f5f1f4;
+  color: #0c0c0c;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(11, 11, 11, 0.1);
   transition: background-color 0.3s ease;
@@ -239,7 +249,7 @@ button:focus-visible {
   line-height: 21.78px;
   text-align: inherit;
   border: 1.5px solid #620a55;
-}
+} */
 
 .custom-button:hover {
   background-color: #be0fa4;
@@ -250,7 +260,7 @@ button:focus-visible {
   background-color: #ccc;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(182, 177, 177);
 }
 
 .Card h2 {
@@ -265,12 +275,14 @@ button:focus-visible {
 }
 
 .Card p.p2 {
+  margin: 0;
   display: flex;
   justify-content: end;
   font-size: 16px;
-  color: #981414;
+  color: #f10b0b;
   line-height: 1.5;
   font-size: 30px;
+  margin-left: 0px;
 }
 
 .Card2 {
@@ -282,14 +294,45 @@ button:focus-visible {
   height: 300px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   object-fit: cover;
+  border: 1px solid rgb(182, 177, 177);
 }
 
 .element-Card {
   display: flex;
   justify-content: center;
   gap: 15%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 img.Card2 {
   align-items: center;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+.container {
+  margin: 0;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+.ListeProduits {
+  margin: 0;
+  display: block;
+  justify-content: left;
+  gap: 10%;
+  color: #020202;
+  align-items: baseline;
+  font-size: 40px;
+  width: 200px;
+}
+.h2ListeProduit {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }

@@ -2,9 +2,13 @@ import Card from "./Card";
 
 function DetailProduitsPage() {
   return (
-    <div>
-      <p className="p">Détail des produits</p>
-      <Card />
+    <div className="container">
+      <p className="p">Détail produits</p>
+      <div className="flex">
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 }
