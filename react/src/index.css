@@ -1,3 +1,9 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,7 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: gainsboro;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,7 +21,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #070708;
   text-decoration: inherit;
 }
 a:hover {
@@ -32,8 +38,13 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #be0fa4;
 }
-
+h2 {
+  font-size: 30px;
+  color: #fff900;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------- */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -44,6 +55,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-left: 200px;
 }
 button:hover {
   border-color: #646cff;
@@ -65,7 +77,8 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-.maDiv {
+/* -------------------------------------------------------------------------------------------------------------------------- */
+.nav {
   padding: 20px;
   background-color: #95b3b5;
   border-radius: 8px;
@@ -76,7 +89,7 @@ button:focus-visible {
 }
 
 /* // Styles pour les listes <ul> à l'intérieur de la div */
-.maDiv ul {
+.nav ul {
   list-style: none;
   padding: 0;
   display: flex;
@@ -87,24 +100,29 @@ button:focus-visible {
 }
 
 /* // Styles pour les éléments <li> à l'intérieur des listes <ul> */
-.maDiv ul li {
+.nav ul li {
   margin-bottom: 10px;
 }
 
 /* // Styles pour les images <img> à l'intérieur de la div */
-.maDiv img {
+.nav img {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+/* -------------------------------------------------------------------------------------------------------------------------- */
 .span {
   color: crimson;
 }
+/* --------------------------------------------------------------------------------------------------------------------------- */
 .h1 {
   font-size: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
 .cligno {
   font-size: 200px;
   color: cadetblue;
@@ -139,38 +157,46 @@ button:focus-visible {
     opacity: 0;
   }
 }
+/* ------------------------------------------------------------------------------------------------------------------------------- */
 .p {
   font-size: 3.2em;
   line-height: 1.1;
   color: #fff900;
+  margin-left: 20%;
 }
+/* ------------------------------------------------------------------------------------------------------------------------------- */
 .bulleHomePage {
-  height: 549px;
-  display: flex;
+  height: 530px;
+  display: flex-block;
   justify-content: flex-end;
-  padding: 0px, 100px, 0px, 100px;
+  padding: 100px, 100px, 100px, 100px;
   gap: 10px;
-  background-color: gainsboro;
+  background-color: rgb(169, 165, 165);
   border-radius: 60px;
-  width: 90%; /* Largeur de la page HTML et du corps est 80% de la largeur de la fenêtre */
+  width: 1500px; /* Largeur de la page HTML et du corps est 80% de la largeur de la fenêtre */
   margin: 0 auto;
   /* flex-direction: column; */
 }
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
 .laFrisee {
-  width: 864px;
-  height: 549px;
+  position: absolute;
+  justify-content: flex-end;
+  width: 1064px;
+  height: 615px;
   top: 100px;
   left: 559px;
   gap: 0px;
-  opacity: 0px;
+  /* opacity: 100%; */
   object-fit: contain;
 }
+/* -------------------------------------------------------------------------------------------------------------------------------- */
 
 .title {
   display: flex;
   justify-content: center;
-  width: 449px;
-  height: 400px;
+  width: 649px;
+  height: 358px;
   gap: 0px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
@@ -179,9 +205,10 @@ button:focus-visible {
   font-size: 96px;
   font-weight: 900;
   line-height: 100px;
-  text-align: left;
-  flex-direction: column;
+  /* text-align: left; */
+  /* flex-direction: column; */
 }
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 .leButton {
   display: block;
   padding: 10px 20px;
@@ -190,7 +217,6 @@ button:focus-visible {
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
-
   color: #f5f1f4;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(11, 11, 11, 0.1);
@@ -217,4 +243,53 @@ button:focus-visible {
 
 .custom-button:hover {
   background-color: #be0fa4;
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+.Card {
+  background-color: #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Card h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.Card p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.Card p.p2 {
+  display: flex;
+  justify-content: end;
+  font-size: 16px;
+  color: #981414;
+  line-height: 1.5;
+  font-size: 30px;
+}
+
+.Card2 {
+  background-color: #e2d7d7;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 270px;
+  height: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.element-Card {
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  margin-top: 20px;
+}
+img.Card2 {
+  align-items: center;
 }

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function Navigation() {
   return (
-    <div className="maDiv">
+    <div className="nav">
       <nav>
         <ul>
           <li>
@@ -11,6 +11,14 @@ export function Navigation() {
           <br />
           <li>
             <Link to="/produits">Produits</Link>
+          </li>
+          <br />
+          <li>
+            <Link to="/Détail Produit"> Détail Produits</Link>
+          </li>
+          <br />
+          <li>
+            <Link to="/catégorie">Catégorie</Link>
           </li>
         </ul>
       </nav>
