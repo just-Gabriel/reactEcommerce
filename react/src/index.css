@@ -55,6 +55,8 @@ hy {
   width: 140%;
   border: 1px solid#34343450;
   border-radius: 7px;
+  width: 50%;
+  float: left;
 }
 
 hy:hover {
@@ -125,6 +127,7 @@ button:focus-visible {
 .h1 {
   font-size: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #000000;
 }
 
 /* --------------------------------------------effect du looding CHARGEMENT EN MODE 3G-------------------------------------------------------------------------- */
@@ -223,6 +226,7 @@ button:focus-visible {
   border-radius: 8px;
   padding: 20px;
   border: 1px solid rgb(182, 177, 177);
+  width: 500px;
 }
 
 .Card h2 {
@@ -248,15 +252,15 @@ button:focus-visible {
 }
 /* --------------------------------------------------------------------------------------------------------------- */
 .Card2 {
-  background-color: #e2d7d7;
-  border: 1px solid #ccc;
+  background-color: #5d5757;
+  /* border: 1px solid #4b4747; */
   border-radius: 8px;
   padding: 10px;
   width: 270px;
   height: 300px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   object-fit: cover;
-  border: 1px solid rgb(182, 177, 177);
+  border: 1px solid rgb(77, 72, 72);
 }
 /* --------------------------------------La div qui englobe les Card de la Home-------------------------------------------------- */
 .element-Card {

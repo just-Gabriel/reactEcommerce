@@ -1,20 +1,18 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import Card from "./Card";
-
-// function ProduitsPage() {
+import Card from "./Card";
+import CategorieListe from "./CategorieListe";
 
 const ProduitListe1 = () => {
   const [products, setProducts] = useState([]);
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get("https://dummyjson.com/products");
-        console.log(response);
-        setProducts(response.data.results); // Mettre à jour le state avec les produits récupérés
-        // setLoading(false);
+        setProducts(response.data.products);
+        setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -25,34 +23,28 @@ const ProduitListe1 = () => {
 
   return (
     <div className="container">
-      <p className="p">produits</p>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            <div>
-              <ul>{product.title}</ul>
-              <ul>{product.price}</ul>
-              <img src={product.thumbnail} alt="imgProduit"></img>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
-    /* <div className="flex">
-        <div className="h2ListeProduit">
-          <hy>{products}</hy>
-          <hy>coucou</hy>
-          <hy>coucou</hy>
-          <hy>coucou</hy>
-          <hy>coucou</hy>
-          <hy>coucou</hy>
-        </div>
+      <p>
+        {loading && (
+          <div className="span">
+            <p className="cligno">
+              <span data-letter="A">A</span>
+              <span data-letter="C">C</span>
+              <span data-letter="H">H</span>
+              <span data-letter="E">E</span>
+              <span data-letter="T">T</span>
+              <span data-letter="E">E</span>
+            </p>
+          </div>
+        )}
+      </p>
 
-        <Card />
-        <Card />
-        <Card />
+      {products.map((product) => (
+        <Card product={product} />
+      ))}
+      <div className="container">
+        <CategorieListe />
       </div>
-    </div> */
+    </div>
   );
 };
 

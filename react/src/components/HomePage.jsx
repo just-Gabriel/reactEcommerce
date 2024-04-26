@@ -1,9 +1,65 @@
 import Button from "./Button";
 import Card from "./Card";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
-function HomePage() {
+const HomePage = () => {
+  const [MenSwatch, setMenSwatch] = useState([]);
+  const [Smartphone, setSmartphone] = useState([]);
+  const [loading, setLoading] = useState(true);
+  // console.log(MenSwatch);
+  // console.log(Smartphone);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "https://dummyjson.com/products/category/mens-watches"
+        );
+
+        setMenSwatch(response.data.products);
+        setLoading(false);
+        // console.log(response.data.products);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "https://dummyjson.com/products/category/smartphones"
+        );
+
+        setSmartphone(response.data.products);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="root">
+      <p>
+        {loading && (
+          <div className="span">
+            <p className="cligno">
+              <span data-letter="A">A</span>
+              <span data-letter="C">C</span>
+              <span data-letter="H">H</span>
+              <span data-letter="E">E</span>
+              <span data-letter="T">T</span>
+              <span data-letter="E">E</span>
+            </p>
+          </div>
+        )}
+      </p>
       <div className="bulleHomePage">
         <div className="bulleHomePage">
           <h1 className="title">
@@ -21,14 +77,21 @@ function HomePage() {
             <p className="h1">MENS WATCHES</p> <Button></Button>
           </h2>
         </div>
-
         <div className="element-Card">
-          <Card />
-          <Card />
-          <Card />
+          {MenSwatch.map((product) => (
+            <Card product={product} />
+          ))}
+        </div>
+        <h2>
+          <p className="h1">MENS WATCHES</p> <Button></Button>
+        </h2>
+        <div className="element-Card">
+          {Smartphone.map((product) => (
+            <Card product={product} />
+          ))}
         </div>
       </div>
     </div>
   );
-}
+};
 export default HomePage;
